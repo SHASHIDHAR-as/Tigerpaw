@@ -5,7 +5,7 @@ const Approval = () => {
         <section>
         <div className='container'>
             <div className='inner-container'>
-                <h1 style={{color:'white',fontSize:'30px'}}>APPROVAL</h1>
+                <h1 style={{color:'white',fontSize:'30px'}}>APPROVAL 2</h1>
             </div>
         </div>
     </section>

@@ -56,7 +56,7 @@ const Sidebar = () => {
                   <Link to='/projecttask/project2' onClick={() => logClickedLink('/projecttask/project2')}>Project 2</Link>
                 </li>
                 <li>
-                  <Link to='/project/task1' onClick={() => logClickedLink('/project/task1')}>Task 1</Link>
+                  <Link to='/projecttask/task' onClick={() => logClickedLink('/project/task1')}>Task 1</Link>
                 </li>
               </ul>
             )}
@@ -69,10 +69,10 @@ const Sidebar = () => {
             {isProjectTaskOpen && (
               <ul className='dropdown-menu1'>
                 <li>
-                  <Link to='/approval/app1' onClick={() => logClickedLink('/approval/app1')}>Approval 1</Link>
+                  <Link to='/approval/approval1' onClick={() => logClickedLink('/approval/app1')}>Approval 1</Link>
                 </li>
                 <li>
-                  <Link to='/approval/app2' onClick={() => logClickedLink('/approval/app2')}>Approval 2</Link>
+                  <Link to='/approval/approval2' onClick={() => logClickedLink('/approval/app2')}>Approval 2</Link>
                 </li>
                 <li>
                   <Link to='/approval/task1' onClick={() => logClickedLink('/approval/task1')}>Task 1</Link>
