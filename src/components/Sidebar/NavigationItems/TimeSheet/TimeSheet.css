@@ -1,0 +1,107 @@
+/* Default styles */
+.container {
+    position: absolute;
+    top: 18vh;
+    left: 15vw;
+    height: 82vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-container {
+    height: 70vh;
+    width: 70vw;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-headings {
+    background-color: var(--black-color);
+    width: 65vw;
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--primary-color);
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+form {
+    width: 65vw;
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+form input {
+    height: 30px;
+    width: 12%;
+    border-radius: 5px;
+    border: none;
+}
+
+.buttons {
+    position: relative;
+    top: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Media Queries for responsiveness */
+
+/* Adjust styles for screens smaller than 768px */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: row;
+        top: 70vh;
+        left: 5vw;
+        height: auto;
+        width: 50vw;
+        margin-left: 80px;
+    }
+
+    .inner-container {
+        width: 90vw;
+        height: auto;
+    }
+
+    .form-headings,
+    form {
+        width: 90vw;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    form input {
+        width: 30%;
+    }
+
+    .buttons {
+        top: 0;
+        margin-top: 20px;
+    }
+}
+
+/* Add more media queries as needed for different screen sizes */

@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .sidebar {
+    position: fixed;
+    left: -100%;
+    width: 15%;
+    height: 100%;
+    transition: all 0.5s ease;
+    /* background-color: #333; */
+    /* Add a maximum width and a margin for larger screens */
+    max-width: 300px;
+    margin-top: 0;
+  }
+  
+  .sidebar ul a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 55px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s ease;
+  }
+  
+  .text-red {
+    margin-top: 20%;
+    color: var(--red-color) !important;
+  }
+  
+  .sidebar ul li:hover a {
+    padding-left: 50px;
+  }
+  
+  .sidebar ul a i {
+    margin-right: 16px;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  label #btn,
+  label #cancel {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  label #btn {
+    left: 40px;
+    top: 15%;
+    color: var(--primary-color);
+    padding: 6px 12px;
+    transition: all 0.5s ease;
+    background-color: rgb(6, 11, 11);
+    border-radius: 10px;
+    border: 2px solid red;
+  }
+  
+  label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 12%;
+    color: var(--primary-color);
+    padding: 4px 9px;
+    margin-left: 20px;
+    transition: all 0.5s ease;
+    background-color: rgb(6, 11, 11);
+    border-radius: 10px;
+    border: 2px solid red;
+  }
+  
+  #check:checked ~ .sidebar {
+    left: 0;
+  }
+  
+  #check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  #check:checked ~ label #cancel {
+    left: 200px;
+  }
+  
+  /* Media Query for Smaller Screens */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 50%;
+      max-width: none;
+    }
+  
+    .sidebar ul a {
+      font-size: 16px;
+    }
+    label #btn {
+        left: 20px;
+        top: 18%;
+      }
+    /* label #cancel {
+        left: 50px;
+        top: 19%;
+      } */
+      /* #check:checked ~ label #btn {
+        left: 200px;
+        display: none;
+      } */
+      
+  
+    /* Add more responsive styles as needed */
+  }
+  
+  /* Dropdown Menu Styles */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 90%;
+    top: 10%;
+    background-color: #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    min-width: 190px;
+    color: rgb(91, 136, 176);
+    border-radius: 10px;
+  }
+  
+  .sidebar li:hover .dropdown-menu {
+    display: block;
+  }
+  .sidebar li:hover  {
+    border-radius: 10px;
+    border: 2px solid rgb(246, 232, 232);
+  }
+  
+  .dropdown-menu1 {
+    display: none;
+    position: absolute;
+    left: 80%;
+    top: 30%;
+    background-color: #0a0202;
+    box-shadow: 0 2px 4px rgba(219, 34, 34, 0.1);
+    z-index: 1;
+    min-width: 190px;
+    /* color: rgb(91, 136, 176); */
+    border-radius: 10px;
+  }
+  
+  .sidebar li:hover .dropdown-menu1 {
+    display: block;
+  }
+  

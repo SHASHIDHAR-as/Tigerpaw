@@ -1,0 +1,27 @@
+.text-yellow {
+    color: var(--primary-color);
+}
+
+.text-white {
+    color: var(--white-color);
+}
+
+.text-red{
+    color: var(--red-color);
+}
+
+.bg-yellow {
+    background-color: var(--primary-color);
+}
+
+.bg-black {
+    background-color: var(--black-color);
+}
+
+.bg-gray {
+    background-color: var(--secondary-color);
+}
+
+.font-bold{
+    font-weight: 600;
+}
