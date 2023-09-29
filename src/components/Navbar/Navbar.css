@@ -6,6 +6,8 @@
     color: #ffbb00;
     padding: 10px 20px;
     height: 80px;
+    position: fixed;
+    width: 98vw;
   }
   
   .left {
@@ -90,6 +92,7 @@
     .right {
       float: right;
       margin-top: 10px;
+ 
       /* margin-left: 300px; */
     }
     .company-icon {
@@ -104,6 +107,7 @@
         margin-right: 1px;
         margin-left: 40px;
       }
+      
       .time-date {
         width: 100px;
         font-size: 12px;

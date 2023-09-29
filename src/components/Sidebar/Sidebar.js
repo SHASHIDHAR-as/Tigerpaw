@@ -45,7 +45,7 @@ const Sidebar = () => {
           <li>
             <Link to='/projecttask' onClick={toggleProjectTaskDropdown}>
               <i>{icons['ProjectTask']}</i>
-              Project / Task
+              Project / Task<i>{icons['Dropdownicon']}</i>
             </Link>
             {isProjectTaskOpen && (
               <ul className='dropdown-menu'>
@@ -65,6 +65,7 @@ const Sidebar = () => {
             <Link to='/approval' onClick={toggleProjectTaskDropdown}>
               <i>{icons['Approval']}</i>
               Approval
+              <i>{icons['Dropdownicon']}</i>
             </Link>
             {isProjectTaskOpen && (
               <ul className='dropdown-menu1'>

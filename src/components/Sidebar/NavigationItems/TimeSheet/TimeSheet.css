@@ -1,6 +1,6 @@
 /* Default styles */
 .container {
-    position: absolute;
+    position: fixed;
     top: 18vh;
     left: 15vw;
     height: 82vh;
@@ -63,6 +63,7 @@ button {
     border-radius: 5px;
     padding: 10px;
     margin: 0 20px;
+    /* position: fixed; */
 }
 
 button:hover {
@@ -80,6 +81,7 @@ button:hover {
         height: auto;
         width: 50vw;
         margin-left: 80px;
+        /* z-index: -1; */
     }
 
     .inner-container {
@@ -104,4 +106,9 @@ button:hover {
     }
 }
 
-/* Add more media queries as needed for different screen sizes */
+.form-scroll-container {
+    max-height: 300px; /* Adjust the maximum height as needed */
+    overflow-y: scroll;
+  }
+
+  

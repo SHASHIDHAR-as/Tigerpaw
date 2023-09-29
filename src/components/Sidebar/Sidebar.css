@@ -11,10 +11,8 @@
     width: 15%;
     height: 100%;
     transition: all 0.5s ease;
-    /* background-color: #333; */
-    /* Add a maximum width and a margin for larger screens */
     max-width: 300px;
-    margin-top: 0;
+    margin-top: 13vh;
   }
   
   .sidebar ul a {
@@ -35,13 +33,14 @@
     color: var(--red-color) !important;
   }
   
-  .sidebar ul li:hover a {
+  /* .sidebar ul li:hover a {
     padding-left: 50px;
-  }
+  } */
   
   .sidebar ul a i {
-    margin-right: 16px;
-  }
+    margin-right: 10px;
+    /* padding-right: 1px; */
+  } 
   
   #check {
     display: none;
@@ -49,7 +48,7 @@
   
   label #btn,
   label #cancel {
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     border-radius: 3px;
   }
@@ -63,6 +62,7 @@
     background-color: rgb(6, 11, 11);
     border-radius: 10px;
     border: 2px solid red;
+    position: fixed;
   }
   
   label #cancel {
@@ -97,6 +97,8 @@
     .sidebar {
       width: 50%;
       max-width: none;
+      top: 2%;
+      height: 55vh;
     }
   
     .sidebar ul a {
