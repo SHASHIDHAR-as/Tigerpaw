@@ -17,6 +17,7 @@ import Logout from './components/Sidebar/NavigationItems/Logout/Logout.js';
 export default function AppRoutes() {
   return (
     <Routes>
+
     <Route path="/dashboard" element={<Dashboard />} />
     <Route path="/attendance" element={<Attendance />} />
     <Route path="/timesheet" element={<TimeSheet />} />
@@ -31,6 +32,7 @@ export default function AppRoutes() {
     <Route path="/approval/approval2" element={<Approval2 />} />
     <Route path="/approval/task1" element={<Task1 />} />
     <Route path="/logout" element={<Logout />} />
+    
 </Routes>
   );
 }
