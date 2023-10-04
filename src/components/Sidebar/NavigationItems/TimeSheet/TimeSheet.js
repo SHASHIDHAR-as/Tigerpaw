@@ -26,9 +26,9 @@ const TimeSheet = () => {
 
   const handleAddRow = () => {
     const currentRow = rows[rows.length - 1];
-    const isRowEmpty = Object.values(currentRow).some((value) => value === '');
+    // const isRowEmpty = Object.values(currentRow).some((value) => value === '');
 
-    if (!isRowEmpty) {
+    // if (!isRowEmpty) {
       const newRow = {
         projectNo: '',
         startTime: '',
@@ -38,7 +38,7 @@ const TimeSheet = () => {
       };
 
       setRows((prevRows) => [...prevRows, newRow]);
-    }
+    // }
   };
 
   return (

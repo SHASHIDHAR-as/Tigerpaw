@@ -135,9 +135,9 @@
     border-radius: 10px;
   }
   
-  .sidebar li:hover .dropdown-menu {
+  /* .sidebar li:hover .dropdown-menu {
     display: block;
-  }
+  } */
   .sidebar li:hover  {
     border-radius: 10px;
     border: 2px solid rgb(246, 232, 232);

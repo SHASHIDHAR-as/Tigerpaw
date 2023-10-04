@@ -43,7 +43,7 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to='/projecttask' onClick={toggleProjectTaskDropdown}>
+            <Link  onClick={toggleProjectTaskDropdown}>
               <i>{icons['ProjectTask']}</i>
               Project / Task
               <i>{icons['Dropdownicon']}</i>
@@ -63,7 +63,7 @@ const Sidebar = () => {
             )}
           </li>
           <li>
-            <Link to='/approval' onClick={toggleProjectTaskDropdown}>
+            <Link  onClick={toggleProjectTaskDropdown}>
               <i>{icons['Approval']}</i>
               Approval
               <i>{icons['Dropdownicon']}</i>
