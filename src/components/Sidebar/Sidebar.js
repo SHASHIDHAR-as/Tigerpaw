@@ -43,10 +43,10 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link  onClick={toggleProjectTaskDropdown}>
+            <Link  >
               <i>{icons['ProjectTask']}</i>
               Project / Task
-              <i>{icons['Dropdownicon']}</i>
+              <i className='dp'>{icons['Dropdownicon']}</i>
             </Link>
             {isProjectTaskOpen && (
               <ul className='dropdown-menu'>
@@ -66,18 +66,21 @@ const Sidebar = () => {
             <Link  onClick={toggleProjectTaskDropdown}>
               <i>{icons['Approval']}</i>
               Approval
-              <i>{icons['Dropdownicon']}</i>
+              <i className='dp'>{icons['Dropdownicon']}</i>
             </Link>
             {isProjectTaskOpen && (
               <ul className='dropdown-menu1'>
                 <li>
-                  <Link to='/approval/approval1' onClick={() => logClickedLink('/approval/app1')}>Approval 1</Link>
+                  <Link to='/approval/approval1'  className='menuitem' onClick={() => logClickedLink('/approval/app1')}>Approval 1</Link>
                 </li>
                 <li>
-                  <Link to='/approval/approval2' onClick={() => logClickedLink('/approval/app2')}>Approval 2</Link>
+                  <Link to='/approval/approval2' 
+                  className='menuitem'
+                  onClick={() => logClickedLink('/approval/app2')}>Approval 2</Link>
                 </li>
                 <li>
-                  <Link to='/approval/task1' onClick={() => logClickedLink('/approval/task1')}>Task 1</Link>
+                  <Link to='/approval/task1'
+                  className='menuitem' onClick={() => logClickedLink('/approval/task1')}>Task 1</Link>
                 </li>
               </ul>
             )}

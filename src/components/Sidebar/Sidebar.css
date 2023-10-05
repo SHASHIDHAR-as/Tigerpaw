@@ -143,7 +143,7 @@
     border: 2px solid rgb(246, 232, 232);
   }
   
-  .dropdown-menu1 {
+  /* .dropdown-menu1 {
     display: none;
     position: absolute;
     left: 80%;
@@ -154,9 +154,17 @@
     min-width: 190px;
     color: rgb(91, 136, 176);
     border-radius: 10px;
-  }
+  } */
   
   .sidebar li:hover .dropdown-menu1 {
     display: block;
+    background-color: rgb(14, 14, 14);
+    /* padding-left: 5px; */
+  }
+  .menuitem{
+    margin-left: 30px;
+  }
+  .dp{
+    padding-left: 8px;
   }
   
