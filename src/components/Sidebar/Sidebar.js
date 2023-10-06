@@ -9,6 +9,11 @@ const Sidebar = () => {
   const toggleProjectTaskDropdown = () => {
     setIsProjectTaskOpen(!isProjectTaskOpen);
   };
+  const [isProjectTask1Open, setIsProjectTask1Open] = useState(false);
+
+  const toggleProjectTask1Dropdown = () => {
+    setIsProjectTask1Open(!isProjectTask1Open);
+  };
 
   // Function to log the clicked link to the console
   const logClickedLink = (destination) => {
@@ -43,32 +48,32 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link  >
+            <Link  onClick={toggleProjectTaskDropdown}>
               <i>{icons['ProjectTask']}</i>
               Project / Task
               <i className='dp'>{icons['Dropdownicon']}</i>
             </Link>
             {isProjectTaskOpen && (
-              <ul className='dropdown-menu'>
+              <ul className='dropdown-menu1'>
                 <li>
-                  <Link to='/projecttask/project1' onClick={() => logClickedLink('/projecttask/project1')}>Project 1</Link>
+                  <Link to='/projecttask/project1' className='menuitem' onClick={() => logClickedLink('/projecttask/project1')}>Project 1</Link>
                 </li>
                 <li>
-                  <Link to='/projecttask/project2' onClick={() => logClickedLink('/projecttask/project2')}>Project 2</Link>
+                  <Link to='/projecttask/project2' className='menuitem' onClick={() => logClickedLink('/projecttask/project2')}>Project 2</Link>
                 </li>
                 <li>
-                  <Link to='/projecttask/task' onClick={() => logClickedLink('/project/task1')}>Task 1</Link>
+                  <Link to='/projecttask/task' className='menuitem'  onClick={() => logClickedLink('/project/task1')}>Task 1</Link>
                 </li>
               </ul>
             )}
           </li>
           <li>
-            <Link  onClick={toggleProjectTaskDropdown}>
+            <Link  onClick={toggleProjectTask1Dropdown}>
               <i>{icons['Approval']}</i>
               Approval
               <i className='dp'>{icons['Dropdownicon']}</i>
             </Link>
-            {isProjectTaskOpen && (
+            {isProjectTask1Open && (
               <ul className='dropdown-menu1'>
                 <li>
                   <Link to='/approval/approval1'  className='menuitem' onClick={() => logClickedLink('/approval/app1')}>Approval 1</Link>
