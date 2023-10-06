@@ -8,11 +8,29 @@
   .sidebar {
     position: fixed;
     left: -100%;
-    width: 15%;
+    width: 18%;
     height: 100%;
     transition: all 0.5s ease;
     max-width: 300px;
     margin-top: 13vh;
+  }
+  .scroll{
+    overflow-y: scroll;
+    height: 620px;
+  }
+  .sidebar::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    background-color: transparent; /* Transparent background */
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Transparent thumb */
+  }
+  
+  /* Add scrollbar to dropdown menu on hover */
+  .sidebar li:hover .dropdown-menu {
+    display: block;
+    background-color: rgb(14, 14, 14);
   }
   
   .sidebar ul a {

@@ -22,7 +22,7 @@ const Sidebar = () => {
         <i id='btn'>{icons['Hamburger']}</i>
         <i id='cancel'>{icons['Cancel']}</i>
       </label>
-      <div className='sidebar bg-gray'>
+      <div className='sidebar bg-gray scroll'>
         <ul>
           <li>
             <Link to='/dashboard' onClick={() => logClickedLink('/dashboard')}>
